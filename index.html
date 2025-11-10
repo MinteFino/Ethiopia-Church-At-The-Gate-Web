@@ -1,118 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="images/Church.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<link rel="stylesheet" href="style.css">
+  <!-- SEO -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ethiopia Church At The Gate — Sioux Falls, SD</title>
+  <meta name="description" content="A vibrant Ethiopian church family in Sioux Falls, SD. Join us for Sunday Worship at 10:00 AM, Prayer Night Wednesdays 6:30 PM, and fellowship. All are welcome!" />
+  <meta name="robots" content="index, follow" />
 
-		<!-- SEO / Social meta -->
-		<meta name="description" content="Ethiopia Church At The Gate — a welcoming church in Sioux Falls. Find service times, events, and ways to connect with our community.">
-		<link rel="canonical" href="https://ethiochurchatthegate.netlify.app/">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Ethiopia Church At The Gate">
-		<meta property="og:description" content="Welcome to Ethiopia Church At The Gate — service times, events, and community information.">
-		<meta property="og:image" content="https://ethiochurchatthegate.netlify.app/images/churchgate.png">
-		<meta property="og:url" content="https://ethiochurchatthegate.netlify.app/">
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="Ethiopia Church At The Gate">
-		<meta name="twitter:description" content="Welcome to Ethiopia Church At The Gate — service times, events, and community information.">
-		<meta name="twitter:image" content="https://ethiochurchatthegate.netlify.app/images/churchgate.png">
+  <!-- Social (Open Graph) -->
+  <meta property="og:title" content="Ethiopia Church At The Gate — Sioux Falls, SD" />
+  <meta property="og:description" content="Worship, prayer, and community. Sunday 10:00 AM · 6820 W 26th St, Sioux Falls, SD 57106." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og-preview.jpg" />
+  <meta property="og:url" content="https://ethiochurchatthegate.netlify.app/" />
 
-		<!-- Performance hints -->
-		<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-		<link rel="preconnect" href="https://www.youtube.com" crossorigin>
+  <!-- Icons / Fonts -->
+  <link rel="icon" href="images/Church.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-		<!-- Structured data (replace placeholder URL with your real site URL) -->
-			<script type="application/ld+json">
-			{
-				"@context": "https://schema.org",
-				"@type": "Organization",
-				"name": "Ethiopia Church At The Gate",
-				"url": "https://ethiochurchatthegate.netlify.app/",
-				"logo": "https://ethiochurchatthegate.netlify.app/images/Church.png",
-				"sameAs": [
-					"https://www.youtube.com/@ChurchattheGate/videos",
-					"https://www.facebook.com/mkoyrra"
-				],
-				"address": {
-					"@type": "PostalAddress",
-					"streetAddress": "6820 W. 26th Street",
-					"addressLocality": "Sioux Falls",
-					"addressRegion": "SD",
-					"postalCode": "57106",
-					"addressCountry": "US"
-				},
-				"openingHoursSpecification": [
-					{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"18:00","closes":"20:00"},
-					{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"13:00","closes":"15:00"}
-				]
-			}
-			</script>
-
-	<title>Ethiopia Church At The Gate</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body> 
-	<!-- <div class="logo">
-	<img src="images/Church.png" alt="Church Logo">
-	</div> -->
+<body data-theme="light">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Home">
+        <img class="brand-logo" src="images/Church.png" alt="Church Logo">
+        <span class="brand-name">Ethiopia Church At The Gate</span>
+      </a>
+      <nav class="nav">
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#pastor">Pastor</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="#contact" class="btn btn--sm">Contact</a></li>
+          <li class="theme-switcher">
+            <button class="chip" data-set-theme="light">Light</button>
+            <button class="chip" data-set-theme="dark">Dark</button>
+            <button class="chip" data-set-theme="warm">Warm</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-overlay">
+      <div class="container hero-inner">
+        <h1 class="display">Welcome Home.</h1>
+        <p class="lead">A community of faith in <strong>Sioux Falls, SD</strong> — worship, prayer, and serving together.</p>
+        <div class="cta">
+          <a class="btn" href="#visit">Plan Your Visit</a>
+          <a class="btn btn--ghost" href="#services">See Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Announcement Bar -->
+  <section class="announcement">
+    <div class="container ann-inner">
+      <i class="fa-solid fa-bell"></i>
+      <span>Sunday Service · 1:00 PM · 6820 W 26th St, Sioux Falls, SD 57106 · All are welcome!</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container grid grid-2">
+      <div>
+        <h2 class="section-title">About Us</h2>
+        <p class="muted">
+          We’re a vibrant Ethiopian church family committed to the teachings of Christ and serving our local and global community.
+          Join us for worship, fellowship, and opportunities to grow in faith.
+        </p>
+        <ul class="checks">
+          <li><i class="fa-solid fa-check"></i> Christ-centered teaching</li>
+          <li><i class="fa-solid fa-check"></i> Welcoming community</li>
+          <li><i class="fa-solid fa-check"></i> Outreach & mission</li>
+        </ul>
+      </div>
+      <div class="card photo-card">
+        <img src="images/churchgate.png" alt="Church Building">
+      </div>
+    </div>
+  </section>
+
+  <!-- Pastor -->
+  <section id="pastor" class="section section--alt">
+    <div class="container grid grid-2">
+      <div class="card photo-card">
+        <img src="images/pastor.jpg" alt="Pastor Mathewos Koyrra">
+      </div>
+      <div>
+        <h2 class="section-title">Meet Our Pastor</h2>
+        <p class="muted"><strong>Pastor Mathewos Koyrra</strong> has been serving our church for over 10+ years. With a deep passion for community and faith, he guides our congregation with wisdom and compassion.</p>
+        <p class="muted">His vision is to build a welcoming church where everyone feels loved and empowered to grow spiritually.</p>
+        <h3>His Ministry Focus</h3>
+        <ul class="checks">
+          <li>Spiritual growth and discipleship</li>
+          <li>Youth and family outreach programs</li>
+          <li>Community service and engagement</li>
+          <li>Preaching with clarity and relevance</li>
+        </ul>
+        <blockquote>
+          “Our church is a family where everyone has a place. Together, we seek to serve God by loving one another and impacting our community with hope and faith.”
+        </blockquote>
+
+		<div class="visit-actions" style="margin-top:16px">
+  		<a class="btn"
+     		href="https://mail.google.com/mail/?view=cm&fs=1&to=Kmathewos09@yahoo.com&su=Message%20from%20Church%20Website"
+     		target="_blank" rel="noopener">
+     	<i class="fa-solid fa-envelope"></i> Email
+  		</a>
+  		<a class="btn btn--ghost" href="https://www.facebook.com/mkoyrra" target="_blank" rel="noopener">
+    			<i class="fa-brands fa-facebook"></i> Facebook
+  		</a>
+  		<a class="btn btn--ghost" href="https://www.youtube.com/@ChurchattheGate/videos" target="_blank" rel="noopener">
+    		<i class="fa-brands fa-youtube"></i> YouTube
+  		</a>
+		</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Services & Gatherings</h2>
+      <p class="muted">Worship, prayer, and connection throughout the week.</p>
+      <div class="grid grid-3">
+        <article class="card service">
+          <h3>Sunday Worship</h3>
+          <p class="muted">Sundays · <strong>1:00 PM</strong> — Worship, message, and fellowship.</p>
+          <div class="tags"><span>Worship</span><span>Teaching</span></div>
+        </article>
+        <article class="card service">
+          <h3>Prayer Night</h3>
+          <p class="muted">Saturday · <strong>6:30 PM</strong> — Prayer and encouragement.</p>
+          <div class="tags"><span>Prayer</span><span>Community</span></div>
+        </article>
+        <article class="card service">
+          <h3>Youth & Groups/Bible Study</h3>
+          <p class="muted">Sunday : <strong>3:30PM</strong> Small groups and youth gatherings — grow together in faith.</p>
+          <div class="tags"><span>Groups</span><span>Youth</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit -->
+  <section id="visit" class="section section--alt">
+    <div class="container grid grid-2">
+      <div>
+        <h2 class="section-title">Plan Your Visit</h2>
+        <p class="muted">
+          We meet at <strong>6820 W 26th St, Sioux Falls, SD 57106</strong>. Come as you are — we’d love to meet you!
+        </p>
+        <div class="visit-actions">
+          <a class="btn" href="https://maps.google.com/?q=6820+W+26th+St+Sioux+Falls+SD+57106" target="_blank" rel="noopener">
+            <i class="fa-solid fa-location-dot"></i> Get Directions
+          </a>
+          <a class="btn btn--ghost" href="https://www.youtube.com/@ChurchattheGate/videos" target="_blank" rel="noopener">
+            <i class="fa-brands fa-youtube"></i> Watch Messages
+          </a>
+        </div>
+      </div>
+      <div class="card embed-card">
+        <iframe title="Google Map" width="100%" height="300" style="border:0" loading="lazy" allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=6820%20W%2026th%20St%20Sioux%20Falls%20SD%2057106&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <!-- Contact -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="muted">Have a question or a prayer request? We’d love to hear from you.</p>
+
+    <!-- FormSubmit Integration -->
+    <form action="https://formsubmit.co/Kmathewos09@yahoo.com" method="POST" class="contact-form">
+  <div class="grid grid-2">
+    <label>Name
+      <input type="text" name="name" required />
+    </label>
+    <label>Email
+      <input type="email" name="email" required />
+    </label>
+    <label class="grid-span-2">Message
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+  </div>
+
+  <!-- Optional hidden fields -->
+  <input type="hidden" name="_subject" value="New message from Church website!" />
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_next" value="https://ethiochurchatthegate.netlify.app/thanks.html" />
+
+  <button class="btn" type="submit">Send Message</button>
+</form>
 
 
 
-	<header>
-		<div class="logo">
-			<img src="images/Church.png" alt="Ethiopia Church At The Gate logo" width="50" height="50" decoding="async">
-		   </div>
-		 
-           <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
-          	<i class="fas fa-bars"></i>
-        	</div>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ethiopia Church At The Gate · Built by Mintesinot Fino</p>
+      <button id="themeCycle" class="chip"><i class="fa-solid fa-circle-half-stroke"></i> Theme</button>
+    </div>
+  </footer>
 
-		   <div class="social-media">
-            <a href="https://www.youtube.com/@ChurchattheGate/videos" target="_blank"><i class="fab fa-youtube"></i></a>
-			 <a href="https://www.facebook.com/mkoyrra" target="_blank"><i class="fab fa-facebook"></i></a>
-		   </div>
-		 
-		   <div class="nav-links" id="nav-links">
-            <a href="index.html">Home</a>
-
-            <div class="dropdown">
-            <a href="about.html" class="dropbtn">About ▼</a>
-            <div class="dropdown-content">
-            <a href="pastor.html">Our Pastor</a>
-            </div>
-            </div>
-                <a href="services.html">Service</a>
-                <a href="contact.html">Contact</a>
-            </div>
-		 </header>
-		 
-		 <div class="church-img">
-		 <img src="images/churchgate.png" alt="Church at the gate" loading="lazy" decoding="async">
-		 </div>
-		 <!-- <div class="video">
-		   <video class="video-background" autoplay loop muted>
-			 <source src="images/IMG_6954.MP4" type="video/mp4">
-		   </video>
-		 </div> -->
-		 
-		 <section class="home">
-		   <h1>Ethiopia Church At The Gate</h1>
-		   <p>Welcome to Ethiopia Church At The Gate, a place of spiritual growth, community, and faith.
-			 We are a vibrant church dedicated to spreading the teachings of Christ and serving our local and global community.
-			 Whether you’re looking to connect with God, join a fellowship, or get involved in our mission, you’ve come to the right place.</p>
-		   <p>We believe in the power of prayer, worship, and outreach.
-			 Our mission is to support each other in our spiritual journeys while making a positive impact in the world.
-			 Explore our website to learn more about our services, events, and the ways we’re helping those in need.</p>
-		 </section>
-		 
-		 <div class="welcome-text">
-		   <marquee behavior="scroll" direction="left">Welcome to Ethiopia Chruch At The Gate. We are located at 6820 W. 26th Street
-			Sioux Falls, SD 57106. You are Welcome to Join us here.</marquee>
-		 </div>
-		 
-		 </div>
-	<script src="script.js"></script>
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
