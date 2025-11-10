@@ -279,14 +279,6 @@ header {
   margin-top: 20px;
 }
 
-
-
-
-
-
-
-
-
 /* service */
 
 .gate {
@@ -317,6 +309,18 @@ header {
 .service-time p {
   font-size: 16px;
   color: #444;
+}
+
+/* bible study */
+.bible-study {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f0f8ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
 }
 
 .youth {
