@@ -49,6 +49,29 @@ header {
   color: #007BFF;
 }
 
+/* Hamburger menu (hidden on desktop) */
+/* ===== HEADER ===== */
+
+/* Hamburger button - hidden on desktop, shown on small screens */
+.hamburger {
+  display: none; /* shown via media query on small screens */
+  cursor: pointer;
+  font-size: 24px;
+  background: none;
+  border: none;
+  padding: 6px;
+  color: inherit; /* keep current color scheme */
+}
+
+/* Mobile: hide nav by default and show when active */
+.nav-links.mobile-hidden {
+  display: none;
+}
+
+.nav-links.active {
+  display: flex !important;
+}
+
 /* Social media right-aligned */
 .social-media {
   flex: 1;
@@ -66,6 +89,7 @@ header {
 .social-media a:hover {
   color: #007BFF;
 }
+
 
 /* Welcome marquee */
 .welcome-text {
@@ -383,6 +407,21 @@ header {
     flex-direction: column;
     gap: 15px;
     margin-top: 15px;
+  }
+
+  /* show hamburger on smaller screens */
+  .hamburger {
+    display: block;
+    margin-left: 10px;
+  }
+
+  /* hide nav-links by default on small screens - user toggles via hamburger */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 
   header {
