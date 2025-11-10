@@ -387,6 +387,22 @@ header {
   text-align: center;
 }
 
+  /* Image responsiveness and better rendering */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Keep homepage and large images centered */
+  .church-img img,
+  .gate img,
+  .pastor-photo,
+  .logo img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 .contact h1, .contact-visit h1 {
   font-size: 2.2rem;
   color: #2c3e50;
